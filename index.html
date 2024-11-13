@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Starbucks Responsive Website</title>
+</head>
+<body>
+     <section class="main">
+        <header>
+            <a href=""><img src="logo.png" class="logo"></a>
+            <div class="toggle"></div>
+            <ul class="nav">
+                <li><a href="">Home</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="text">
+                <h2>Starbucks <br><span class="style">Or Nothing</span></h2>
+                <p>
+               "Welcome to Starbucks, where every cup is crafted with quality and sustainably sourced beans. Discover your favorite blend, indulge in handcrafted flavors, and enjoy moments of warmth and connection."</p>
+                <a href="#" class="btn">Order Now</a>
+                <div class="social-media">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="image">
+                <img src="image.png">
+            </div>
+        </div>
+     </section>
+     <script>
+        const menutoggle = document.querySelector('.toggle');
+        const nav = document.querySelector('.nav');
+        menutoggle.onclick = function(){
+            menutoggle.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+     </script>
+</body>
+</html>
